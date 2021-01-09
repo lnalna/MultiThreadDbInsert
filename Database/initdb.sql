@@ -1,0 +1,6 @@
+create table TEST
+(
+    FIELD NUMBER not null
+);
+
+commit
