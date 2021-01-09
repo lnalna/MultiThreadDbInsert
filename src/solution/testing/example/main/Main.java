@@ -1,7 +1,7 @@
 package solution.testing.example.main;
 
 import solution.testing.example.records.dao.DatabaseProperties;
-import solution.testing.example.service.MainService;
+import solution.testing.example.records.service.MainService;
 
 public class Main {
     public static void main(String[] args) {

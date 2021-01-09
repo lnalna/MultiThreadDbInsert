@@ -1,4 +1,4 @@
-package solution.testing.example.service;
+package solution.testing.example.records.service;
 
 import solution.testing.example.records.exception.ServiceException;
 import solution.testing.example.records.pojo.Entries;

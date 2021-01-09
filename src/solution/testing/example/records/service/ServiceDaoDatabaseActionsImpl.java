@@ -1,4 +1,4 @@
-package solution.testing.example.service;
+package solution.testing.example.records.service;
 
 import solution.testing.example.records.dao.DaoDatabaseActions;
 import solution.testing.example.records.dao.DatabaseProperties;
