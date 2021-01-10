@@ -1,4 +1,4 @@
-package main.java.solution.testing.example.records.dao;
+package solution.testing.example.records.dao;
 
 import com.zaxxer.hikari.HikariDataSource;
 

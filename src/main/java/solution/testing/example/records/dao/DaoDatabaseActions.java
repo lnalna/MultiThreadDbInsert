@@ -1,7 +1,7 @@
-package main.java.solution.testing.example.records.dao;
+package solution.testing.example.records.dao;
 
-import main.java.solution.testing.example.records.exception.DaoException;
-import main.java.solution.testing.example.records.pojo.Entry;
+import solution.testing.example.records.exception.DaoException;
+import solution.testing.example.records.pojo.Entry;
 
 import java.sql.*;
 import java.util.ArrayList;

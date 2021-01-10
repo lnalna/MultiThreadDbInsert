@@ -1,4 +1,4 @@
-package main.java.solution.testing.example.records.dao;
+package solution.testing.example.records.dao;
 
 public final class DatabaseProperties {
     private static final DatabaseProperties DATABASE_PROPERTIES = new DatabaseProperties();

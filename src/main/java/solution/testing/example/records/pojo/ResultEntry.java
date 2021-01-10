@@ -1,4 +1,4 @@
-package main.java.solution.testing.example.records.pojo;
+package solution.testing.example.records.pojo;
 
 import javax.xml.bind.annotation.XmlAttribute;
 import java.io.Serializable;
