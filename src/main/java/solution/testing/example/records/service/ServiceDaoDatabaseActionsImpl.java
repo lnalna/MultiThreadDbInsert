@@ -1,10 +1,10 @@
-package solution.testing.example.records.service;
+package main.java.solution.testing.example.records.service;
 
-import solution.testing.example.records.dao.DaoDatabaseActions;
-import solution.testing.example.records.dao.DatabaseProperties;
-import solution.testing.example.records.exception.DaoException;
-import solution.testing.example.records.exception.ServiceException;
-import solution.testing.example.records.pojo.Entry;
+import main.java.solution.testing.example.records.dao.DaoDatabaseActions;
+import main.java.solution.testing.example.records.dao.DatabaseProperties;
+import main.java.solution.testing.example.records.exception.DaoException;
+import main.java.solution.testing.example.records.exception.ServiceException;
+import main.java.solution.testing.example.records.pojo.Entry;
 
 import java.util.ArrayList;
 import java.util.List;

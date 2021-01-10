@@ -1,9 +1,9 @@
-package solution.testing.example.records.service;
+package main.java.solution.testing.example.records.service;
 
-import solution.testing.example.records.exception.ServiceException;
-import solution.testing.example.records.pojo.Entries;
-import solution.testing.example.records.pojo.Entry;
-import solution.testing.example.records.pojo.ResultEntries;
+import main.java.solution.testing.example.records.exception.ServiceException;
+import main.java.solution.testing.example.records.pojo.Entries;
+import main.java.solution.testing.example.records.pojo.Entry;
+import main.java.solution.testing.example.records.pojo.ResultEntries;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
@@ -51,7 +51,7 @@ public class XmlService {
 
     public void createFirstXmlFile(List<Entry> entriesList) {
         try {
-            JAXBContext jc = JAXBContext.newInstance(solution.testing.example.records.pojo.Entries.class);
+            JAXBContext jc = JAXBContext.newInstance(main.java.solution.testing.example.records.pojo.Entries.class);
             Marshaller m = jc.createMarshaller();
             Entries entries = new Entries();
             entries.setEntries(entriesList);
@@ -88,7 +88,7 @@ public class XmlService {
     public ResultEntries getEntriesFromSecondXml() {
         ResultEntries entries = null;
         try {
-            JAXBContext jc = JAXBContext.newInstance(solution.testing.example.records.pojo.ResultEntries.class);
+            JAXBContext jc = JAXBContext.newInstance(main.java.solution.testing.example.records.pojo.ResultEntries.class);
             Unmarshaller u = jc.createUnmarshaller();
             entries = (ResultEntries) u.unmarshal(new File(SECOND_XML_FILE));
         } catch (JAXBException e) {

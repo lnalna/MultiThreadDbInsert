@@ -1,24 +1,24 @@
-package solution.testing.example.records.pojo;
+package main.java.solution.testing.example.records.pojo;
 
-import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlAttribute;
 import java.io.Serializable;
 import java.util.Objects;
 
-public class Entry implements Serializable {
+public class ResultEntry implements Serializable {
     private Integer field;
 
     public Integer getField() {
         return field;
     }
 
-    @XmlElement(name = "field")
+    @XmlAttribute(name = "field")
     public void setField(Integer field) {
         this.field = field;
     }
 
     @Override
     public String toString() {
-        return "Entry{" +
+        return "ResultEntry{" +
                "field=" + field +
                '}';
     }
@@ -27,8 +27,8 @@ public class Entry implements Serializable {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Entry entry = (Entry) o;
-        return Objects.equals(field, entry.field);
+        ResultEntry that = (ResultEntry) o;
+        return Objects.equals(field, that.field);
     }
 
     @Override

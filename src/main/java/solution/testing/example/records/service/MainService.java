@@ -1,9 +1,9 @@
-package solution.testing.example.records.service;
+package main.java.solution.testing.example.records.service;
 
-import solution.testing.example.records.dao.DatabaseProperties;
-import solution.testing.example.records.pojo.Entry;
-import solution.testing.example.records.pojo.ResultEntries;
-import solution.testing.example.records.pojo.ResultEntry;
+import main.java.solution.testing.example.records.dao.DatabaseProperties;
+import main.java.solution.testing.example.records.pojo.Entry;
+import main.java.solution.testing.example.records.pojo.ResultEntries;
+import main.java.solution.testing.example.records.pojo.ResultEntry;
 
 import java.util.List;
 
@@ -20,7 +20,7 @@ public final class MainService {
         System.out.println("Create work directory if not exist..." + XmlService.WORK_DIRECTORY);
         xmlService.createWorkDirectoryIfNotExist();
         System.out.println("Work directory " + XmlService.WORK_DIRECTORY + " is created.");
-        System.out.println("Update fields in database . " + DatabaseProperties.getInstance().getEntryCount() + " solution.testing.example.records.");
+        System.out.println("Update fields in database . " + DatabaseProperties.getInstance().getEntryCount() + " main.java.solution.testing.example.records.");
         serviceDaoDatabaseActionsImpl.updateFields();
         System.out.println("Success update fields in database.");
         System.out.println("Select fields from database.");

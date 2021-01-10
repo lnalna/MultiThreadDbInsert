@@ -1,7 +1,7 @@
-package solution.testing.example.main;
+package main.java.solution.testing.example.main;
 
-import solution.testing.example.records.dao.DatabaseProperties;
-import solution.testing.example.records.service.MainService;
+import main.java.solution.testing.example.records.dao.DatabaseProperties;
+import main.java.solution.testing.example.records.service.MainService;
 
 public class Main {
     public static void main(String[] args) {
@@ -26,8 +26,8 @@ public class Main {
         DatabaseProperties databaseProperties = DatabaseProperties.getInstance();
         databaseProperties.setDataBaseDriver("oracle.jdbc.OracleDriver");
         databaseProperties.setUrl("jdbc:oracle:thin:@127.0.0.1:1521:ora");
-        databaseProperties.setUserName("input username");
-        databaseProperties.setPassword("input password");
+        databaseProperties.setUserName("username");
+        databaseProperties.setPassword("password");
         databaseProperties.setEntryCount(1_000_000);
 
 //        int entryCount = 0;
